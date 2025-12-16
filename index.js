@@ -40,16 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   const tabBtns = document.querySelectorAll(".tab-btn");
+  const tabContents = document.querySelectorAll(".tab-content");
+
   tabBtns.forEach((btn) => {
     btn.addEventListener("click", function () {
-      // Remove active class from all tabs and buttons
+      const tabId = this.dataset.tab + "-tab";
       tabBtns.forEach((b) => b.classList.remove("active"));
-      document.querySelectorAll(".tab-content").forEach((content) => {
-        content.classList.remove("active");
-      });
+      tabContents.forEach((content) => content.classList.remove("active"));
+
       this.classList.add("active");
-      const tabId = this.getAttribute("data-tab");
-      document.getElementById(`${tabId}-tab`).classList.add("active");
+      document.getElementById(tabId)?.classList.add("active");
     });
   });
 
@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
       .padStart(2, "0");
   }
 
-//   about section animation
+  //   about section
   const aboutSection = document.querySelector(".about");
 
   const observer = new IntersectionObserver(
