@@ -133,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(function () {
       window.open(
-        `https://wa.me/6281234567890?text=${encodedMessage}`,
+        `https://wa.me/6285861873896?text=${encodedMessage}`,
         "_blank"
       );
 
