@@ -163,4 +163,42 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // ===== TILT CARD EFFECT =====
+  const cards = document.querySelectorAll(".tilt-card");
+
+  cards.forEach((card) => {
+    card.addEventListener("mousemove", (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+
+      const rotateX = -(y - centerY) / 12;
+      const rotateY = (x - centerX) / 12;
+
+      card.style.transform = `
+      perspective(1000px)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+      scale(1.05)
+    `;
+    });
+
+    card.addEventListener("mouseenter", () => {
+      card.style.transition = "transform 0.1s ease";
+    });
+
+    card.addEventListener("mouseleave", () => {
+      card.style.transition = "transform 0.4s ease";
+      card.style.transform = `
+      perspective(1000px)
+      rotateX(0)
+      rotateY(0)
+      scale(1)
+    `;
+    });
+  });
 });
