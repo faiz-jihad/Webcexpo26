@@ -15,9 +15,7 @@
   --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* ============================================
-   RESET & BASE STYLES
-============================================ */
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -70,9 +68,7 @@ section {
   position: relative;
 }
 
-/* ============================================
-   SECTION TITLE
-============================================ */
+/* section */
 .section-title {
   text-align: center;
   margin-bottom: 80px;
@@ -110,9 +106,7 @@ section {
   margin-right: auto;
 }
 
-/* ============================================
-   BUTTONS
-============================================ */
+/* Tombol  */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -170,9 +164,7 @@ section {
   background-color: rgba(52, 152, 219, 0.05);
 }
 
-/* ============================================
-   HEADER & NAVBAR
-============================================ */
+/*Header & Navbar  */
 header {
   background-color: rgba(255, 254, 223, 0.98);
   position: fixed;
@@ -301,9 +293,7 @@ header.scrolled {
   background: rgba(44, 62, 80, 0.1);
 }
 
-/* ============================================
-   HERO SECTION
-============================================ */
+/* Section Hero */
 .hero {
   position: relative;
   padding: 180px 0 140px;
@@ -453,9 +443,7 @@ header.scrolled {
   opacity: 0.8;
 }
 
-/* ============================================
-   ABOUT SECTION
-============================================ */
+/* Section About */
 .about-content {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -554,9 +542,7 @@ header.scrolled {
   display: block;
 }
 
-/* ============================================
-   MEDIA PARTNER & SUPPORTED BY SECTION
-============================================ */
+/* Media Partner Section */
 .partners-section {
   padding: 120px 0;
   background: linear-gradient(180deg, #ffffff, #f7f9fc);
@@ -684,9 +670,7 @@ header.scrolled {
   text-align: center;
 }
 
-/* ============================================
-   CAMPUS CAROUSEL
-============================================ */
+/* Campus Corousel */
 .campus-carousel {
   padding: 160px 0 120px;
 }
@@ -750,9 +734,7 @@ header.scrolled {
   animation-play-state: paused;
 }
 
-/* ============================================
-   EVENTS SECTION
-============================================ */
+/* Section Event */
 .event-tabs {
   display: flex;
   justify-content: center;
@@ -800,14 +782,13 @@ header.scrolled {
   opacity: 1;
 }
 
-/* Event Grid */
+
 .event-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 36px;
 }
 
-/* Event Card */
 .event-card {
   position: relative;
   background: linear-gradient(
@@ -910,7 +891,6 @@ header.scrolled {
   display: block;
 }
 
-/* GRID */
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -921,7 +901,6 @@ header.scrolled {
   padding: 60px 20px;
 }
 
-/* CARD */
 .card {
   width: 190px;
   height: 254px;
@@ -937,7 +916,6 @@ header.scrolled {
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
 
-/* TEXT */
 .card h2 {
   z-index: 2;
   color: rgb(0, 33, 17);
@@ -946,7 +924,6 @@ header.scrolled {
   transform: translateZ(40px);
 }
 
-/* BORDER ANIMATION */
 .card::before {
   content: "";
   position: absolute;
@@ -956,7 +933,6 @@ header.scrolled {
   animation: rotBGimg 3s linear infinite;
 }
 
-/* INNER */
 .card::after {
   content: "";
   position: absolute;
@@ -966,13 +942,11 @@ header.scrolled {
   z-index: 1;
 }
 
-/* HOVER WOW */
 .card:hover {
   box-shadow: 0 20px 40px rgba(0, 183, 255, 0.35),
     0 0 40px rgba(255, 255, 252, 0.3);
 }
 
-/* ROTATE */
 @keyframes rotBGimg {
   from {
     transform: rotate(0deg);
@@ -983,9 +957,7 @@ header.scrolled {
 }
 
 
-/* ============================================
-   DIVISION SECTION
-============================================ */
+/* Section Division */
 .division-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1028,9 +1000,7 @@ header.scrolled {
   color: var(--text-gray);
 }
 
-/* ============================================
-   REGISTRATION SECTION
-============================================ */
+/*  registration section */
 .registration {
   background-color: white;
   position: relative;
@@ -1079,9 +1049,7 @@ header.scrolled {
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
 }
 
-/* ============================================
-   SPEAKER FLIP CARDS
-============================================ */
+/* Pembicara section */
 .speaker-flip-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1188,9 +1156,7 @@ header.scrolled {
   opacity: 0.95;
 }
 
-/* ============================================
-   FOOTER
-============================================ */
+/* Footer */
 footer {
   background-color: var(--primary-dark);
   color: white;
@@ -1222,7 +1188,6 @@ footer {
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Social Links */
 .social-links {
   display: flex;
   gap: 15px;
@@ -1248,7 +1213,6 @@ footer {
   transform: translateY(-5px);
 }
 
-/* Footer Contact */
 .footer-contact {
   flex: 1;
   min-width: 300px;
@@ -1282,9 +1246,7 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-/* ============================================
-   ANIMATIONS
-============================================ */
+/* animasi */
 @keyframes heroFadeIn {
   from {
     opacity: 0;
@@ -1449,6 +1411,10 @@ footer {
     left: 0;
   }
 
+  .logo-text span:first-child {
+    font-size: 1.2rem;
+  }
+
   .nav-menu li {
     margin: 15px 0;
   }
@@ -1598,6 +1564,7 @@ footer {
   .section-title h2 {
     font-size: 1.8rem;
   }
+  
 
   .countdown {
     gap: 15px;
