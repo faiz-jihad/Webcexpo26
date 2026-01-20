@@ -1486,6 +1486,9 @@ footer {
   .hero p {
     font-size: 1.1rem;
   }
+  .logo-text span:first-child {
+    font-size: 1.2rem;
+  }
 
   /* Countdown */
   .countdown {
