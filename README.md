@@ -3,7 +3,7 @@
 Selamat datang di repositori resmi untuk website CEXPO 2026. Proyek ini berisi kode sumber lengkap (HTML, CSS, JavaScript) untuk halaman web statis pameran tersebut.
 
 Website ini di-deploy secara otomatis menggunakan GitHub Pages dan dapat diakses melalui URL berikut:
-**[faiz-jihad.github.io](faiz-jihad.github.io)**
+[**[faiz-jihad.github.io](faiz-jihad.github.io)**](https://cexpo2026.netlify.app/)
 
 ## 📝 Deskripsi Proyek
 
